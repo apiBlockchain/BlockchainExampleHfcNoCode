@@ -1,0 +1,15 @@
+I. BofA Blockchain 
+
+
+1. Very conversational, interactive group
+2. Workshop is usually 1.5 - 2 days, not one. 
+3. Senior guy Soren is already pressed for time
+4. Tom Dirkin works for Cindy Murray in BofA.  Do a annual summit group, handles b2b interactions and file transfer in and out of bank. 
+5. Dirkin has guys on his team that are exploring blockchain. We've done stuff with BofA in blockchain in the Pacific Rim
+6. Guy has the blockchain fundamentals down. 
+7. Johnathan Hill has someone who could go deep on blockchain already.  It might be pushed down to 0.5 hours and have nothing to do. 
+   Use cases, what we're doing, how we're going about it, point of view. 
+8. He'll check with soren as to what they want to talk to about.  Very informal meeting. They want just a couple of
+9. He comes in Thursday.  We'll do a run through on Wednesday. 
+
+10. Wade:  Put together a couple of PoV slides, a couple of use case slides, have the demo ready to go, pull up bluemix, etc. 

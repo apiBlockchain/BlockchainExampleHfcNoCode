@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/dental-office.css" />
+	<link type="text/css" rel="stylesheet" href="css/columns.css" />
+	<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+	<script src="js/dental.js"></script>
+
+</head>
+<body>
+	<div class="main">
+		<header class="shadow">
+			<div class="row">
+					<div class="column4 dental-logo"><img src="images/dental-icon.png" class="dental-logo-image"/>Dental Group</div>
+					<div class="menu column7">
+						<ul style="padding-top:5px;">
+							<li><a href="">Search</a></li>
+							<li><a href="" class="active-link">Patient Info</a></li>
+							<li><a href="">Insurance</a></li>
+							<li><a href="">Appointments</a></li>
+						</ul>
+					</div>
+					<div class="column1">Mary Smith <div class="user-icon"><img src="images/user-icon.png" width="30%"/></div></div>
+			</div>
+		</header>
+		<div class="row blue-background">
+			<div class="column1">&nbsp;</div>
+			<div id="container" class="column10">
+			<div id="form">
+				<div class="sectionTitle">Search</div>
+				<div class="row insurance-columns font16">
+					<div class="column3 grey-font label-padding">Policy No</div>
+					<div class="column3"><input type="text" id="subscriberID" value="ba2345"/>  </div>
+					<div class="column3 policy-number grey-font label-padding">Member ID</div>
+					<div class="column3 policy-padding"><input type="text" id="memberID" value="M-01"/></div>
+				</div>
+				<div class="row top-row-buttons dark-grey" style="margin-top:40px;">
+							<div class="column7 space-filler">&nbsp;</div>
+							<div class="column1 verify-btn-space" id="search">Search</div>
+
+				</div>
+
+			<div id="patientInfo" style="display:none;">
+			<div class="sectionTitle">Patient</div>
+			<div class="row insurance-columns font16">
+				<div class="column3 grey-font label-padding">Name</div>
+				<div class="column3"><input type="text" id="name" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Date of Birth</div>
+				<div class="column3 policy-padding"><input type="text" id="dob" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Policy No</div>
+				<div class="column3"><input type="text" id="subscriberId" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Primary</div>
+				<div class="column3 policy-padding"><input type="text" id="primary" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Coverage Type</div>
+				<div class="column3"><input type="text" id="coverageType" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Coverage Name</div>
+				<div class="column3 policy-padding"><input type="text" id="coverageName" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Carrier ID</div>
+				<div class="column3"><input type="text" id="carrierId" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Start Date</div>
+				<div class="column3 policy-padding"><input type="text" id="startDate" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Group No</div>
+				<div class="column3"><input type="text" id="group" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">End Date</div>
+				<div class="column3 policy-padding"><input type="text" id="endDate" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Plan Code</div>
+				<div class="column3"><input type="text" id="plan" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Employer</div>
+				<div class="column3 policy-padding"><input type="text" id="employer" value=""/></div>
+			</div>
+			<div class="row font16 insurance-columns2">
+				<div class="column3 grey-font label-padding">Annual Deductable Balance <span class="dollar-sign">$</span></div>
+				<div class="column3"><input type="text" id="annualDeductableBalance" value=""/>  </div>
+				<div class="column3 policy-number grey-font label-padding">Annual Benefit Maximum Balance <span class="dollar-sign2">$</span></div>
+				<div class="column3 policy-padding"><input type="text" id="annualBenefitMaximumBalance" value=""/></div>
+			</div>
+			<div class="clear"></div>
+
+
+
+
+
+
+			<div class="row">
+				<div class="column12 sectionTitle morePaddingTop morePaddingBottom">Benefits</div>
+				<div class="row font16 insurance-columns2">
+					<div class="column4 grey-font">Annual Deductible - <span class="grey-font deductible"></span></div>
+					<div class="column2">&nbsp;</div>
+					<div class="column4 policy-number grey-font">Annual Benefit Maximum - <span class="  grey-font annual-benefits"></div>
+					<div class="column2 policy-padding"></div>
+				</div>
+				<div class="row font16 insurance-columns2">
+					<div class="column4 grey-font lifetime-max">Lifetime Benefit Maximum</div>
+					<div class="column2"> &nbsp;</div>
+					<div class="column4 policy-number grey-font diagnostic dynamic-line-height">Diagnostic/Preventive Care</div>
+					<div class="column2 policy-padding">&nbsp;</div>
+				</div>
+				<div class="row font16 insurance-columns3">
+					<div class="column4 grey-font minor-restorative">Minor Restorative Care</div>
+					<div class="column2">&nbsp; </div>
+					<div class="column4 policy-number grey-font major-restorative">Major Restorative Care</div>
+					<div class="column2 policy-padding">&nbsp;</div>
+				</div>
+				<div class="row font16 insurance-columns2">
+					<div class="column4 grey-font ortho-treatment">Orthodontic Treatment</div>
+					<div class="column2">&nbsp; </div>
+					<div class="column4 policy-number grey-font ortho-benefits">Orthodontic Lifetime Benefit Maximum</div>
+					<div class="column2 policy-padding">&nbsp;</div>
+				</div>
+
+			</div>
+
+
+
+
+
+				<div class="row top-row-buttons dark-grey" style="margin-top:40px;">
+							<div class="column7 space-filler">&nbsp;</div>
+							<div class="column1 verify-btn-space" id="search">OK</div>
+
+				</div>
+
+			</div>
+			</div><!--end of form-->
+
+			<div class="column1">
+				&nbsp;
+			</div>
+		</div><!--patient div-->
+
+		</div><!-- end of main div-->
+</div>
+<div class="popup" id="popup" style="display:none;">
+	<div class="cover">
+		<div class="popup-content">
+			<div class="row">
+				  <div class="column12 message">Verifying Information</div>
+			</div>
+			<div class="row" style="height:10px;">
+				  <div class="column12 message-details1" id="message1"></div>
+			</div>
+			<div class="row" style="height:10px;">
+				  <div class="column12 message-details2" id="message2"></div>
+			</div>
+			<div class="row" style="height:10px;">
+				  <div class="column12 message-details3"  id="message3"></div>
+			</div>
+			<div class="row verify-icons-margin-top">
+				  <div class="column4 employer-icon employer-check"></div>
+					<div class="column4 coverage-icon dental-check"></div>
+					<div class="column4 check-icon verified-check"></div>
+			</div>
+			<div class="row top-row-buttons dark-grey" style="margin-top:40px;">
+						<div class="column4">&nbsp;</div>
+						<div class="column4" id="close">OK</div>
+						<div class="column4">&nbsp;</div>
+				</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
